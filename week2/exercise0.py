@@ -2,7 +2,8 @@
 """Modify each function until the tests pass."""
 
 
-def add_5(a_number):
+def add_5(a_number=2):
+    return a_number + 5
     """Return a number that is 5 bigger than number given.
 
     This isn't a trick!
@@ -13,10 +14,11 @@ def add_5(a_number):
         return a_number plus five
     except expressed in python, not english
     """
-    pass
+    return a_number + 5
 
 
 def adder(a_number, another_number):
+    return a_number + another_number 
     """Add two numbers.
 
     Same as above, but with any two numbers.
@@ -25,6 +27,7 @@ def adder(a_number, another_number):
 
 
 def shout(a_string):
+    return str.upper(a_string)
     """Return a string in uppercase.
 
     look up the docs for string methods. Either in the official docs, here:
@@ -36,6 +39,7 @@ def shout(a_string):
 
 
 def really_shout(a_string):
+    return str.upper(a_string + '!')
     """Return a string in uppercase, with an exclamation mark on the end.
 
     In the spirit of being DRY (don't repeat yourself) reuse the shout function
@@ -45,6 +49,7 @@ def really_shout(a_string):
     pass
 
 def shout_with_a_number(a_string, a_number):
+    return str.upper(f'{a_string} {a_number}')    
     """Return a string in uppercase with a space and a_number concatentated.
     E.g.
     >>> shout_with_a_number('hello', 42)
