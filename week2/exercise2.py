@@ -6,8 +6,7 @@ Go through it and change it until it runs.
 import string
 
 def getLetter(index):
-    alphabet = string.ascii_lowercase + " "
-    
+    alphabet = string.ascii_lowercase + "s"
     return alphabet[index]
 
 
