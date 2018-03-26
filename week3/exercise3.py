@@ -30,6 +30,18 @@ def advancedGuessingGame():
     """
     return "You got it!"
 
+    count = 1
+    s = int((low + high) / 2)
+    while actual_number != s:
+      if s < actual_number:
+            low = s
+      else:
+            high = s
+      s = int((low + high) / 2)
+      count = count
+      
+    return {"guess": s, "tries": count }
+
 
 if __name__ == "__main__":
     advancedGuessingGame()

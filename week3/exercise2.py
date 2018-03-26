@@ -23,6 +23,7 @@ def exampleGuessingGame():
     guessed = False
 
     while not guessed:
+        try:
         guessedNumber = int(input("guess a number: "))
         print("you guessed {},".format(guessedNumber),)
         if guessedNumber == actualNumber:
