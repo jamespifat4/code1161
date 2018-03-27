@@ -1,8 +1,7 @@
 # -*- coding: UTF-8 -*-
 """Refactoring.
 
-This excercise is very similar to week 2, exercise 2. It contains a complete
-and working example, but it's very poorly written.
+This exercise contains a complete and working example, but it's very poorly written.
 
 Your job is to go through it and make it as good as you can.
 
@@ -24,8 +23,8 @@ are on top of it, take these comments out. Others won't have comments and
 you'll need to figure out for yourself what to do.
 """
 
-from __future__ import division
-from __future__ import print_function
+
+
 
 
 # This is a terrible function. The rest of the functions in this file do a
