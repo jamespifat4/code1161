@@ -18,6 +18,8 @@ if LOCAL != CWD:
 
 
 
+
+
 def get_some_details():
     """Parse some JSON.
 
@@ -37,9 +39,14 @@ def get_some_details():
     json_data = open(LOCAL + "/lazyduck.json").read()
 
     data = json.loads(json_data)
-    return {"lastName":       None,
-            "password":       None,
-            "postcodePlusID": None
+    lastName = data["results"][0]["name"]["last"]
+    password = data["results"][0]["login"]["password"]
+    postcode = 
+    id = 
+
+    return {"lastName": lastName, 
+            "password": data["results"][0]["login"]["password"],
+            "postcodePlusID": data["results"][0]["location"]+["id"]["name"]["value"]
             }
 
 
@@ -79,7 +86,9 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
-    pass
+
+
+
 
 
 def wunderground():

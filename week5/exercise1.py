@@ -49,7 +49,19 @@ def do_bunch_of_bad_things():
 # return a list of countdown messages, much like in the bad function above.
 # It should say something different in the last message.
 def countdown(message, start, stop, completion_message):
-    pass
+    message_countdown = []
+
+    CountDown = start
+    while (CountDown >= stop):
+        if CountDown != stop:
+            res = str(message) +" " + str(CountDown)
+            message.countdown.append(res)
+            CountDown -= 1
+        else:
+            res = str(message) +" " + str(CountDown)
+            message.countdown.append(res)
+            return message_countdown
+
 
 
 # TRIANGLES
@@ -62,32 +74,40 @@ def countdown(message, start, stop, completion_message):
 # The stub functions are made for you, and each one is tested, so this should
 # hand hold quite nicely.
 def calculate_hypotenuse(base, height):
-    pass
-
+    hypotenuse_of_triangle = (base**2 + height**2)**(1/2.0) #ratio of 1:2.
+    return hypotenuse_of_triangle
 
 def calculate_area(base, height):
-    pass
+    area_of_triangle = (base*height)/2
+    return area_of_triangle
 
 
 def calculate_perimeter(base, height):
-    pass
+    hypotenuse = (base**2 + height**2)**(1/2.0)
+    perimeter_of_triangle = (base + height + hypotenuse)
+    return perimeter_of_triangle
 
 
 def calculate_aspect(base, height):
-    pass
+    triangle_aspect = (base/height)
+    return triangle_aspect
 
 
 # Make sure you reuse the functions you've already got
 # Don't reinvent the wheel
-def get_triangle_facts(base, height, units="mm"):
-    return {"area": None,
+    def get_triangle_facts(base, height, units="mm"):
+        triangle_hypotenuse = (base**2 + height**2)**(1/2.0)
+        triangle_area = (base*height)/2
+        hypotenuse = (base**2 + height**2)**(1/2.0)
+        triangle_perimeter = (base + height + hypotenuse)
+        triangle_aspect = (base/height)
+        return {"area": None,
             "perimeter": None,
             "height": None,
             "base": None,
             "hypotenuse": None,
             "aspect": None,
             "units": None}
-
 
 # this should return a multi line string that looks a bit like this:
 #
