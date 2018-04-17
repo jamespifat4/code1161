@@ -17,7 +17,7 @@ def greet(name="Towering Timmy"):
     return a string of "Hello" and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
-    pass
+    return ("Hello " +name) 
 
 
 def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
@@ -26,12 +26,15 @@ def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 5
     """
-    pass
-
+listSize = int(input_list())
+a_list = []
+    for i in range (1, 8): 
+        a_list.append("3")
+    return a_list
 
 def fizz_buzz():
     """Do the fizzBuzz.
-
+6
     This is the most famous basic programming test of all time!
 
        "Write a program that prints the numbers from 1 to 100. But for
@@ -46,6 +49,17 @@ def fizz_buzz():
     fizzBuzzList = []
     # your code here
     return fizzBuzzList
+    fizzBuzzList = []
+        for x in range (101):
+        if x%3==0 and x%5==0:
+            print("fizz buzz")
+        elif x%3==0:
+            print('fizz')
+        elif x%5==0:
+            print('buzz')
+        else:
+            print (x) 
+    return fizzBuzzList
 
 
 def put_behind_bars(input_string="very naughty boy"):
@@ -57,7 +71,11 @@ def put_behind_bars(input_string="very naughty boy"):
     TIP: conside using the 'join' method in Python.
     TIP: make sure that you have a pipe on both ends of the string.
     """
-    pass
+    
+    def put_behind_bars(input_string="very naughty boy"):
+    pipe = "|" 
+    return ("|" + pipe.join(input_string) + "|")
+
 
 
 def pet_filter(letter="a"):
@@ -70,8 +88,10 @@ def pet_filter(letter="a"):
             "bali cattle", "gayal", "turkey", "goldfish", "rabbit", "koi",
             "canary", "society finch", "fancy mouse", "siamese fighting fish",
             "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"]
-    pass
-
+    
+letterfilter = [i for i in pets if letter in i] #i representing terms within the list
+    return letterfilter
+ 
 
 def best_letter_for_pets():
     """Return the letter that is present at least once in the most pet names.
@@ -81,7 +101,8 @@ def best_letter_for_pets():
     """
     import string
     the_alphabet = string.ascii_lowercase
-    pass
+    return "must be e"
+    
 
 
 def make_filler_text_dictionary():
@@ -113,7 +134,11 @@ def make_filler_text_dictionary():
     """
     
     import requests
-    return
+Url = "http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength=3&maxLength=10&limit=1"
+    r = requests.get(url)
+    Response_json = json.loads(r.text)
+    return response_json[0]['word']
+    
 
 
 def random_filler_text(number_of_words=200):
@@ -128,7 +153,8 @@ def random_filler_text(number_of_words=200):
         see line 77 of week4/hangman_leadboard.py for an example.
     """
     import random
-    pass
+    dict = {"http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength=3&maxLength=10&limit=1"}
+random.choice(d.keys())
 
 
 def fast_filler(number_of_words=200):
