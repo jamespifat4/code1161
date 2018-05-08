@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+"I have found my dataset - Food Choices. This delves into the eating habits of college students at an extremelty in depth nature, which will benefit my project's quality. So far I am using Keggle to create my presentation and it's working great!"

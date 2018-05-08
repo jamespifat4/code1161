@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+"Having finished our weekly exercises and also our in class assessment, I have learn't a vast range of python language and fucntions. What I thought was the most confusing thing ever has now become much more easier and to an extent fun for me. As of now, I am working on my data set assignment"
